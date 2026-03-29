@@ -1,79 +1,65 @@
-# OpenClaw AI Team & Desktop Agent Guide
+# OpenClaw Guides
 
-> 构建你的专属AI团队 | 让桌面级Agent像同事一样替你干活
+> 完整的 OpenClaw 指南集合 | Complete OpenClaw Guide Collection
 
-Comprehensive guide to building AI teams and desktop coworker agents with OpenClaw.
-
-## 🌟 Two Core Concepts
-
-This repo covers **two powerful OpenClaw patterns**:
-
-### 1️⃣ AI Team (AI团队)
-
-Build a multi-agent team where each AI has a specific role - they collaborate while you sleep.
-
-- **Main Agent** → Task dispatcher / manager
-- **Code Agent** → Technical specialist  
-- **News Agent** → Research assistant
-- *(Add more as needed)*
-
-### 2️⃣ Desktop Coworker (桌面助手)
-
-Build an AI coworker that works alongside you in real-time.
-
-- **Context aware** - knows what you're working on
-- **Proactive** - offers help when needed
-- **Collaborative** - pair programs, reviews, assists
+精选自小红书热门教程 (6,000+ likes) - 涵盖 AI 团队建设和桌面助手配置
 
 ---
 
-## 📚 Table of Contents
+## 📚 Available Guides
 
-| Section | Description |
-|---------|-------------|
-| [AI Team Guide](ai-team/) | Multi-agent team setup |
-| [Desktop Coworker Guide](desktop-coworker/) | Single agent coworker |
-| [Architecture](ai-team/ARCHITECTURE.md) | Three-layer architecture |
-| [Setup](ai-team/SETUP.md) | Step-by-step installation |
-| [Agent Configs](ai-team/AGENTS.md) | Agent configurations |
-| [Workflows](ai-team/WORKFLOWS.md) | Collaboration patterns |
+| Guide | Description | Popularity |
+|-------|-------------|------------|
+| [ai-team/](ai-team/) | Build a multi-agent AI team | 6,215 likes |
+| [desktop-coworker/](desktop-coworker/) | Desktop AI coworker setup | 5,844 likes |
 
 ---
 
 ## 🚀 Quick Start
 
-### For AI Team
+Choose your path:
 
-```bash
-# Install OpenClaw
-npm install -g openclaw
+### 1. Build an AI Team (AI团队)
 
-# Create your first team
-openclaw onboard
-openclaw agents add code-agent
-openclaw agents add news-agent
+Create a team of AI agents that work while you sleep.
+
+```
+┌──────────────────────────────────────────┐
+│           MAIN (Team Lead)                │
+│     Receives tasks → Dispatches → Returns  │
+└──────────┬───────────────────┬────────────┘
+           │                   │
+    ┌──────▼──────┐    ┌──────▼──────┐
+    │ CODE AGENT  │    │ NEWS AGENT   │
+    │            │    │             │
+    │ Code work  │    │ Research    │
+    └───────────┘    └─────────────┘
 ```
 
-### For Desktop Coworker
+👉 [Go to AI Team Guide](ai-team/)
 
-```bash
-# Install OpenClaw  
-npm install -g openclaw
+### 2. Desktop Coworker (桌面助手)
 
-# Create coworker
-openclaw agents add coworker
-```
+Build an AI that works alongside you in real-time.
+
+- Context aware
+- Proactive suggestions
+- Pair programming
+- Research assistance
+
+👉 [Go to Desktop Coworker Guide](desktop-coworker/)
 
 ---
 
-## 📖 Choose Your Path
+## 📖 How to Use
 
-| You want... | Go to |
-|------------|-------|
-| Multiple AI agents working together | [ai-team/](ai-team/) |
-| One AI that works with you in your apps | [desktop-coworker/](desktop-coworker/) |
-| Understand how OpenClaw works | [ai-team/ARCHITECTURE.md](ai-team/ARCHITECTURE.md) |
-| Step-by-step setup | [ai-team/SETUP.md](ai-team/SETUP.md) |
+Each guide folder contains a **comprehensive README.md** with:
+
+1. Overview & concepts
+2. Step-by-step setup
+3. Configuration examples
+4. Workflows
+5. Troubleshooting
 
 ---
 
@@ -82,9 +68,7 @@ openclaw agents add coworker
 - **YouTube**: [我用 OpenClaw 搭了一支 AI 团队](https://www.youtube.com/watch?v=d25fcWem0ME)
 - **Bilibili**: [BV1GNcXz9E91](https://www.bilibili.com/video/BV1GNcXz9E91/)
 - **Blog**: [OpenClaw多智能体机制](https://www.cnblogs.com/softlin/p/19694335)
-- **XHS Top Posts**:
-  - "最强外挂！我用 OpenClaw 搭了一支 AI 团队" (6,215 likes)
-  - "让AI员工像同事一样" (5,844 likes)
+- **XHS**: 小红书热门教程
 
 ---
 
